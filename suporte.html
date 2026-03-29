@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Central de Suporte do aplicativo Inkers.">
+    
+    <title>Suporte | Inkers</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .page-content { padding-top: 150px; padding-bottom: 100px; max-width: 800px; margin: 0 auto; }
+        .page-content h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 1.5rem; color: var(--accent-color); }
+        .page-content h2 { font-size: 1.8rem; margin-top: 3rem; margin-bottom: 1rem; color: #fff; }
+        .page-content p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+        .page-content a { color: var(--accent-color); text-decoration: underline; }
+        
+        .step-box { background-color: var(--secondary-color); padding: 20px; border-radius: 12px; border-left: 5px solid var(--accent-color); margin-bottom: 15px; }
+        .step-box p { color: #f4f4f4; margin: 0; font-size: 1.1rem; }
+        .step-box span { font-weight: 800; color: var(--accent-color); margin-right: 10px; }
+        
+        .contact-card { text-align: center; padding: 40px; background: var(--secondary-color); border-radius: 20px; margin-top: 40px; }
+        .contact-card a { font-size: 1.5rem; font-weight: 800; text-decoration: none; display: inline-block; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo"><img src="assets/inkers_logo.png" alt="Inkers" style="height: 40px; width: auto;"></a>
+            <nav id="main-nav" class="nav" style="display: block; position: static; background: none; border: none; padding: 0;">
+                <ul style="flex-direction: row; gap: 2.5rem;"><li><a href="index.html">Voltar ao Início</a></li></ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content container">
+        <h1>Central de Suporte</h1>
+        <p>Problemas com a sua página ou integrações? Nossa equipe técnica está altamente treinada para resolver obstáculos para que você continue focado em tatuar.</p>
+
+        <h2>Como desconectar o Google Calendar da sua conta</h2>
+        <p>Caso deseje interromper a sincronização da agenda fora do painel administrativo do Inkers, você pode realizar isso pelo painel de Conexões do lado do próprio Google. Siga os passos:</p>
+        
+        <div class="step-box"><span>Passo 1:</span> Acesse sua Conta do Google abrindo a URL: <a href="https://myaccount.google.com/connections" target="_blank">myaccount.google.com/connections</a>.</div>
+        <div class="step-box"><span>Passo 2:</span> Faça o login se necessário e vá na categoria <b>"Apps e serviços de terceiros"</b>.</div>
+        <div class="step-box"><span>Passo 3:</span> Localize o aplicativo <b>Inkers</b> na lista de acessos.</div>
+        <div class="step-box"><span>Passo 4:</span> Clique no aplicativo e role a tela até o final, clicando em <b>"Excluir todas as conexões necessárias com Inkers"</b> e confirme.</div>
+        <p style="margin-top: 15px; font-size: 0.95rem;">* O Inkers não possuirá mais acesso passivo ao seu calendário ou agenda imediatamente após a execução desse fluxo.</p>
+
+        <div class="contact-card">
+            <h2>Abra um Ticket Conosco</h2>
+            <p>Se você prefere ajuda humana para configurar sua Ficha de Anamnese, faturamento ou necessita excluir seus dados da plataforma de forma permanente, mande um e-mail para nós:</p>
+            <a href="mailto:brunnoribeiroangra21@gmail.com">brunnoribeiroangra21@gmail.com</a>
+        </div>
+    </main>
+
+    <footer id="contato" class="footer">
+        <div class="container footer-content">
+            <div class="footer-info"><img src="assets/inkers_logo.png" style="height: 40px;"></div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+                    <li><a href="politica-de-privacidade.html">Privacidade</a></li>
+                    <li><a href="exclusao-de-dados.html">Exclusão de Dados</a></li>
+                    <li><a href="suporte.html">Suporte</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
