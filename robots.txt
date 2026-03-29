@@ -4,4 +4,4 @@ Allow: /
 # Bloquear diretórios sensíveis (se houver, ex: painel admin)
 # Disallow: /admin/
 
-Sitemap: https://inkers.page/sitemap.xml
+Sitemap: https://inkers.com.br/sitemap.xml
