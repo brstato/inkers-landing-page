@@ -25,7 +25,68 @@
     <title>Inkers | Gestão Completa e Landing Pages para Tatuadores</title>
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://inkers.com.br">
+    <link rel="canonical" href="https://inkers.com.br/">
+
+    <!-- Dados Estruturados JSON-LD (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://inkers.com.br/#organization",
+          "name": "Inkers",
+          "url": "https://inkers.com.br/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://inkers.com.br/assets/images/inkers_logo.webp",
+            "width": 200,
+            "height": 60
+          },
+          "description": "Plataforma completa de gest\u00e3o para tatuadores: landing page pr\u00f3pria, ficha de anamnese digital, agenda inteligente, controle financeiro e de estoque.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "brunnoribeiroangra21@gmail.com",
+            "contactType": "customer support",
+            "availableLanguage": "Portuguese"
+          },
+          "sameAs": [
+            "https://app.inkers.com.br"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://inkers.com.br/#website",
+          "url": "https://inkers.com.br/",
+          "name": "Inkers",
+          "description": "Plataforma completa de gest\u00e3o para tatuadores",
+          "publisher": {
+            "@id": "https://inkers.com.br/#organization"
+          },
+          "inLanguage": "pt-BR"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://inkers.com.br/#app",
+          "name": "Inkers",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "iOS, Android, Web",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "BRL",
+            "availability": "https://schema.org/InStock",
+            "description": "Acesso beta gratuito"
+          },
+          "description": "Aplicativo de gest\u00e3o completo para tatuadores: agenda, ficha de anamnese digital, controle financeiro e de estoque, e landing page profissional.",
+          "url": "https://app.inkers.com.br",
+          "author": {
+            "@id": "https://inkers.com.br/#organization"
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
