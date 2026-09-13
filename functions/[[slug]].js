@@ -1,3 +1,4 @@
+//limpeza de cache
 export async function onRequest(context) {
     const { request } = context;
     const url = new URL(request.url);
