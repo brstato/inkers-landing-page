@@ -6,11 +6,4 @@
         "directory": ".",
         "binding": "ASSETS"
     }
-    // Para guardar os contatos do botão "Eu quero":
-    // 1. npx wrangler kv namespace create LEADS
-    // 2. descomente o bloco abaixo (com a vírgula depois de "assets") e cole o id gerado
-    // 3. npx wrangler secret put ADMIN_CHAVE   (senha para baixar a lista em /api/eu-quero/lista)
-    // ,"kv_namespaces": [
-    //     { "binding": "LEADS", "id": "COLE_O_ID_AQUI" }
-    // ]
 }

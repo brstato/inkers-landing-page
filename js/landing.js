@@ -3,7 +3,8 @@
   document.documentElement.classList.add('js');
 
   const APP_URL = 'https://app.inkers.com.br';
-  const API = '/api/eu-quero';
+  // A rota é da API do Inkers; o Worker de inkers.com.br repassa /api/v1/publico/* ao servidor.
+  const API = '/api/v1/publico/interesse';
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 
@@ -16,11 +17,14 @@
     referencia: document.referrer ? new URL(document.referrer).hostname : '',
   };
 
-  const registrar = (evento, local) => {
+  // Contagem de visitas e cliques (só números; nenhum dado de quem visitou)
+  const registrar = (evento) => {
     try {
-      const corpo = JSON.stringify({ evento, local, ...origem });
-      if (navigator.sendBeacon) navigator.sendBeacon('/api/evento', new Blob([corpo], { type: 'application/json' }));
-      else fetch('/api/evento', { method: 'POST', body: corpo, headers: { 'Content-Type': 'application/json' }, keepalive: true });
+      fetch(`${API}/evento`, {
+        method: 'POST', keepalive: true, credentials: 'omit',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ evento }),
+      }).catch(() => {});
     } catch (_) { /* contagem é opcional */ }
   };
 
@@ -170,9 +174,53 @@
   const enviar = $('[data-enviar]');
   let localClique = '';
 
+  // Turnstile (verificação da Cloudflare contra robôs). A API diz se está ligado e qual a chave pública.
+  const caixaTurnstile = $('[data-turnstile]');
+  let turnstile = null;   // Promise<{ id } | null>
+  const prepararTurnstile = () => {
+    if (turnstile || !caixaTurnstile) return turnstile;
+    turnstile = fetch(API, { credentials: 'omit' })
+      .then((r) => (r.ok ? r.json() : {}))
+      .then((cfg) => new Promise((resolve) => {
+        if (!cfg || !cfg.turnstile) return resolve(null);
+        window.__inkersTurnstile = () => {
+          try {
+            const id = window.turnstile.render(caixaTurnstile, {
+              sitekey: cfg.turnstile, theme: 'dark', appearance: 'interaction-only', language: 'pt-br',
+              action: 'eu-quero',
+            });
+            resolve({ id });
+          } catch (_) { resolve(null); }
+        };
+        const sc = document.createElement('script');
+        sc.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=__inkersTurnstile';
+        sc.async = true;
+        sc.onerror = () => resolve(null);
+        document.head.appendChild(sc);
+      }))
+      .catch(() => null);
+    return turnstile;
+  };
+  // Espera o token por alguns segundos (a verificação costuma ser invisível e rápida).
+  const tokenTurnstile = async () => {
+    const w = await prepararTurnstile();
+    if (!w || !window.turnstile) return '';
+    for (let i = 0; i < 40; i++) {
+      const t = window.turnstile.getResponse(w.id);
+      if (t) return t;
+      await new Promise((r) => setTimeout(r, 250));
+    }
+    return '';
+  };
+  const reiniciarTurnstile = async () => {
+    const w = await prepararTurnstile();
+    if (w && window.turnstile) try { window.turnstile.reset(w.id); } catch (_) { /* ok */ }
+  };
+
   const abrir = (local) => {
     localClique = local;
-    registrar('eu_quero_clique', local);
+    registrar('clique');
+    prepararTurnstile();
     if (!modal) { location.href = APP_URL; return; }
     if (typeof modal.showModal === 'function') modal.showModal();
     else modal.setAttribute('open', '');
@@ -231,12 +279,7 @@
     enviar.disabled = true;
     const textoBotao = enviar.textContent;
     enviar.textContent = 'Enviando...';
-    try {
-      const r = await fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(dados) });
-      if (!r.ok) throw new Error(String(r.status));
-      sucesso(nome);
-    } catch (_) {
-      // Se o registro falhar, o contato não se perde: abre um e-mail já preenchido
+    const porEmail = () => {
       const corpo = `Eu quero o Inkers!\n\nNome: ${dados.nome}\nWhatsApp: ${f.whatsapp.value}\nInstagram: ${dados.instagram ? '@' + dados.instagram : '-'}\nCidade: ${dados.cidade || '-'}`;
       mostrarErro('');
       erro.hidden = false;
@@ -245,12 +288,33 @@
         ev.preventDefault();
         location.href = `mailto:brunnoribeiroangra21@gmail.com?subject=${encodeURIComponent('Eu quero o Inkers')}&body=${encodeURIComponent(corpo)}`;
       });
+    };
+    try {
+      dados.turnstile = await tokenTurnstile();
+      const r = await fetch(API, {
+        method: 'POST', credentials: 'omit',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(dados),
+      });
+      if (r.ok) {
+        sucesso(nome);
+      } else if (r.status === 400 || r.status === 429) {
+        // Mensagem da própria API (dado inválido, verificação ou limite de envios)
+        let msg = 'Confira os dados e tente de novo.';
+        try { msg = (await r.json()).error || msg; } catch (_) { /* ok */ }
+        mostrarErro(msg);
+      } else {
+        porEmail();
+      }
+    } catch (_) {
+      porEmail();
     } finally {
+      reiniciarTurnstile();
       enviar.disabled = false;
       enviar.textContent = textoBotao;
     }
   });
 
   // Visita (contagem simples, sem dados pessoais)
-  registrar('visita', location.pathname);
+  registrar('visita');
 })();

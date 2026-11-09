@@ -407,6 +407,8 @@ p { text-wrap: pretty; }
 .campo input[aria-invalid="true"] { box-shadow: inset 0 0 0 2px var(--erro); }
 .campo-duplo { display: grid; gap: 14px; }
 .modal-erro { color: var(--erro); font-size: .93rem; }
+.turnstile:empty { display: none; }
+.turnstile iframe { max-width: 100%; }
 .modal-form .btn-pri { margin-top: 6px; }
 .modal-legal { text-align: center; color: var(--texto-3); font-size: .82rem; }
 .modal-legal a { color: var(--texto-2); }
