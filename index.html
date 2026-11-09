@@ -4,31 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>Inkers | Sua agência de marketing pessoal, na palma da mão</title>
     <meta name="description"
-        content="Crie sua página profissional de tatuador gratuitamente. Mostre seu portfólio, divulgue seu link e receba orçamentos de clientes.">
+        content="O Inkers cuida da divulgação do seu trabalho de tatuagem: você manda a foto, aprova com um toque e os clientes chegam pedindo orçamento. Uma agência de marketing pessoal no seu celular.">
 
-    <!-- Open Graph Data -->
-    <meta property="og:title" content="Inkers - Sua página profissional de tatuador">
+    <meta property="og:title" content="Inkers | Sua agência de marketing pessoal, na palma da mão">
     <meta property="og:description"
-        content="Crie sua página profissional de tatuador gratuitamente. Mostre seu portfólio, divulgue seu link e receba orçamentos de clientes.">
+        content="Você tatua. O Inkers cuida para que o seu trabalho seja visto, toda semana, e para que o cliente chegue até você.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://inkers.com.br">
-    <meta property="og:image" content="https://inkers.com.br/assets/images/inkers_logo.webp">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Inkers - Sua página profissional de tatuador">
+    <meta property="og:url" content="https://inkers.com.br/">
+    <meta property="og:image" content="https://inkers.com.br/assets/icon-512.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Inkers | Sua agência de marketing pessoal, na palma da mão">
     <meta name="twitter:description"
-        content="Crie sua página profissional de tatuador gratuitamente. Mostre seu portfólio, divulgue seu link e receba orçamentos de clientes.">
-    <meta name="twitter:image" content="https://inkers.com.br/assets/images/inkers_logo.webp">
+        content="Você tatua. O Inkers cuida para que o seu trabalho seja visto, toda semana, e para que o cliente chegue até você.">
+    <meta name="twitter:image" content="https://inkers.com.br/assets/icon-512.png">
 
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <title>Inkers | Sua página profissional de tatuador</title>
-
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://inkers.com.br/">
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
 
-    <!-- Dados Estruturados JSON-LD (Schema.org) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -38,32 +36,22 @@
           "@id": "https://inkers.com.br/#organization",
           "name": "Inkers",
           "url": "https://inkers.com.br/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://inkers.com.br/assets/images/inkers_logo.webp",
-            "width": 200,
-            "height": 60
-          },
-          "description": "Plataforma completa de gest\u00e3o para tatuadores: landing page pr\u00f3pria, ficha de anamnese digital, agenda inteligente, controle financeiro e de estoque.",
+          "logo": "https://inkers.com.br/assets/icon-512.png",
+          "description": "Agência de marketing pessoal para tatuadores, no celular.",
           "contactPoint": {
             "@type": "ContactPoint",
             "email": "brunnoribeiroangra21@gmail.com",
             "contactType": "customer support",
             "availableLanguage": "Portuguese"
           },
-          "sameAs": [
-            "https://app.inkers.com.br"
-          ]
+          "sameAs": ["https://app.inkers.com.br"]
         },
         {
           "@type": "WebSite",
           "@id": "https://inkers.com.br/#website",
           "url": "https://inkers.com.br/",
           "name": "Inkers",
-          "description": "Plataforma completa de gest\u00e3o para tatuadores",
-          "publisher": {
-            "@id": "https://inkers.com.br/#organization"
-          },
+          "publisher": { "@id": "https://inkers.com.br/#organization" },
           "inLanguage": "pt-BR"
         },
         {
@@ -72,444 +60,455 @@
           "name": "Inkers",
           "applicationCategory": "BusinessApplication",
           "operatingSystem": "iOS, Android, Web",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "BRL",
-            "availability": "https://schema.org/InStock",
-            "description": "Acesso beta gratuito"
-          },
-          "description": "Aplicativo de gest\u00e3o completo para tatuadores: agenda, ficha de anamnese digital, controle financeiro e de estoque, e landing page profissional.",
+          "description": "Agência de marketing pessoal para tatuadores: divulgação do trabalho nas redes, página profissional e pedidos de orçamento, tudo aprovado pelo próprio tatuador.",
           "url": "https://app.inkers.com.br",
-          "author": {
-            "@id": "https://inkers.com.br/#organization"
-          }
+          "author": { "@id": "https://inkers.com.br/#organization" }
         }
       ]
     }
     </script>
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet" />
-
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/landing.css?v=2">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container header-inner">
-            <a href="index.html" class="logo" aria-label="Página Inicial do Inkers">
-                <img src="assets/inkers_logo.png" alt="Inkers Logo" style="height: 40px; width: auto;">
-                <span class="logo-text">Inkers</span>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="topo" data-topo>
+        <div class="wrap topo-in">
+            <a href="#inicio" class="marca" aria-label="Inkers, voltar ao início">
+                <span class="marca-icone" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M14.086 18.412A2 2 0 0 1 12.67 19H5v-7.672a2 2 0 0 1 .586-1.414L11.75 3.75a6 6 0 1 1 8.49 8.49z"/><path d="M16 8 2 22"/><path d="M17.488 15H9"/></svg>
+                </span>
+                Inkers
             </a>
-            <button class="mobile-menu-btn" aria-label="Abrir Menu" aria-expanded="false" aria-controls="main-nav">
-                <span class="hamburger"></span>
-            </button>
-            <nav id="main-nav" class="nav">
-                <ul>
-                    <li><a href="#como-funciona">Como funciona</a></li>
-                    <li><a href="#beneficios">Recursos</a></li>
-                    <li><a href="#gestao">Gestão</a></li>
-                    <li><a href="#planos">Preço</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
+            <nav class="menu" aria-label="Seções da página">
+                <a href="#dores">O problema</a>
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#por-dentro">Por dentro</a>
+                <a href="#duvidas">Dúvidas</a>
             </nav>
+            <button type="button" class="btn btn-pri btn-sm" data-eu-quero="topo">Eu quero</button>
         </div>
     </header>
 
-    <main>
-        <!-- HERO: SUA PÁGINA PROFISSIONAL -->
-        <section id="hero" class="hero">
-            <div class="container content">
-                <div class="badge-hero">Grátis para começar. Sem cartão de crédito.</div>
-                <h1>Sua página profissional de tatuador.</h1>
-                <p>Mostre seu trabalho, apresente seus estilos e facilite o contato com novos clientes. Crie sua página
-                    gratuitamente e tenha um lugar profissional para divulgar seu trabalho além do Instagram.</p>
-                <div class="hero-actions" style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                    <a href="http://app.inkers.com.br" class="cta-btn cta-large">Criar minha página grátis</a>
-                    <a href="#exemplos" class="cta-btn cta-large"
-                        style="background: transparent; border: 1px solid var(--primary-color); color: var(--text-color);">Ver
-                        exemplo</a>
+    <main id="conteudo">
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="wrap hero-grid">
+                <div class="hero-texto">
+                    <p class="selo"><span class="ponto" aria-hidden="true"></span>Acesso antecipado para tatuadores</p>
+                    <h1>Sua agência de marketing pessoal, <em>na palma da mão.</em></h1>
+                    <p class="hero-lead">Depois de um dia inteiro tatuando, ainda sobra ser fotógrafo, redator, social
+                        media e atendente. O Inkers assume essa parte para você voltar a fazer o que importa: tatuar.</p>
+                    <div class="hero-acoes">
+                        <button type="button" class="btn btn-pri btn-lg" data-eu-quero="hero">Eu quero</button>
+                        <a href="#como-funciona" class="btn btn-link">Ver como funciona
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg></a>
+                    </div>
+                    <ul class="hero-garantias">
+                        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Sem compromisso</li>
+                        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Nada é publicado sem você aprovar</li>
+                    </ul>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="celular celular-tras">
+                        <img src="assets/images/app/pagina.webp" alt="" width="660" height="1428">
+                    </div>
+                    <div class="celular celular-frente">
+                        <img src="assets/images/app/inicio.webp" alt="" width="660" height="1428" fetchpriority="high">
+                    </div>
+                    <div class="aviso-flutuante">
+                        <span class="aviso-icone"><svg viewBox="0 0 24 24"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg></span>
+                        <span><strong>Novo pedido de orçamento</strong><small>Juliana · veio do link da bio</small></span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- PROPOSTA DE VALOR -->
-        <section id="valor" class="solucao-section text-center">
-            <div class="container">
-                <h2>Tudo que seu cliente precisa para conhecer seu trabalho.</h2>
-                <p style="max-width: 800px; margin: 0 auto 2rem auto;">Em vez de enviar várias fotos pelo WhatsApp ou
-                    depender apenas do Instagram, envie um único link com tudo que seu cliente precisa saber sobre você.
-                </p>
-                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 2rem;">
-                    <div
-                        style="background-color: var(--bg-dark); padding: 40px; border-radius: 12px; flex: 1; min-width: 300px; text-align: left; border: 1px solid rgba(255,255,255,0.05);">
-                        <ul
-                            style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-                            <li style="display: flex; align-items: center; gap: 10px;">✅ Seu nome e identidade
-                                profissional</li>
-                            <li style="display: flex; align-items: center; gap: 10px;">✅ Foto e apresentação</li>
-                            <li style="display: flex; align-items: center; gap: 10px;">✅ Portfólio</li>
-                            <li style="display: flex; align-items: center; gap: 10px;">✅ Estilos de tatuagem</li>
-                            <li style="display: flex; align-items: center; gap: 10px;">✅ Localização</li>
-                            <li style="display: flex; align-items: center; gap: 10px;">✅ Horários de atendimento</li>
-                            <li style="display: flex; align-items: center; gap: 10px;">✅ WhatsApp</li>
-                            <li style="display: flex; align-items: center; gap: 10px;">✅ Solicitação de orçamento</li>
-                        </ul>
+        <!-- DORES -->
+        <section id="dores" class="secao">
+            <div class="wrap">
+                <header class="secao-topo revelar">
+                    <p class="rotulo">Soa familiar?</p>
+                    <h2>Ninguém virou tatuador para passar a noite pensando em legenda.</h2>
+                </header>
+                <div class="dores">
+                    <article class="dor revelar">
+                        <span class="dor-n">01</span>
+                        <h3>Você posta quando sobra tempo. E nunca sobra.</h3>
+                        <p>Depois de oito horas de sessão, a última coisa que você quer é abrir o Instagram para trabalhar
+                            de novo.</p>
+                    </article>
+                    <article class="dor revelar">
+                        <span class="dor-n">02</span>
+                        <h3>O perfil some e a agenda sente.</h3>
+                        <p>Algumas semanas sem aparecer e o movimento cai. Quando você volta, parece que começou do zero.</p>
+                    </article>
+                    <article class="dor revelar">
+                        <span class="dor-n">03</span>
+                        <h3>A foto ficou ótima. A legenda não sai.</h3>
+                        <p>E o post fica para amanhã. Depois para a semana que vem. Enquanto isso, o trabalho fica parado
+                            na galeria.</p>
+                    </article>
+                    <article class="dor revelar">
+                        <span class="dor-n">04</span>
+                        <h3>Agência cabe no sonho, não no bolso.</h3>
+                        <p>Contratar alguém para cuidar do seu marketing custa caro, e quase ninguém entende de verdade o
+                            mundo da tatuagem.</p>
+                    </article>
+                    <article class="dor revelar">
+                        <span class="dor-n">05</span>
+                        <h3>Orçamento bom esfria no meio do Direct.</h3>
+                        <p>O pedido chega, se mistura com quarenta conversas e, quando você vê, o cliente já fechou com
+                            outro.</p>
+                    </article>
+                    <article class="dor revelar">
+                        <span class="dor-n">06</span>
+                        <h3>Muita curtida, pouca gente na cadeira.</h3>
+                        <p>Você não sabe o que de fato traz cliente, então continua postando no escuro e torcendo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIRADA / COMPARATIVO -->
+        <section class="secao secao-escura">
+            <div class="wrap">
+                <header class="secao-topo revelar">
+                    <p class="rotulo">A virada</p>
+                    <h2>Imagine ter uma agência só sua, que entende de tatuagem e cabe no seu bolso.</h2>
+                    <p class="secao-sub">É isso que o Inkers é: alguém cuidando da sua divulgação todos os dias, enquanto
+                        você cuida da sua arte.</p>
+                </header>
+                <div class="comparativo revelar" role="table" aria-label="Comparação entre fazer sozinho, contratar agência e usar o Inkers">
+                    <div class="comp-linha comp-cabeca" role="row">
+                        <span role="columnheader"><span class="sr">Critério</span></span>
+                        <span role="columnheader">Fazendo sozinho</span>
+                        <span role="columnheader">Contratando agência</span>
+                        <span role="columnheader" class="comp-destaque">Com o Inkers</span>
+                    </div>
+                    <div class="comp-linha" role="row">
+                        <span role="rowheader">Quanto do seu tempo</span>
+                        <span role="cell" data-rot="Sozinho: ">Noites e folgas</span>
+                        <span role="cell" data-rot="Agência: ">Reuniões e briefings</span>
+                        <span role="cell" class="comp-destaque">Alguns minutos por semana</span>
+                    </div>
+                    <div class="comp-linha" role="row">
+                        <span role="rowheader">Constância</span>
+                        <span role="cell" data-rot="Sozinho: ">Some quando a agenda aperta</span>
+                        <span role="cell" data-rot="Agência: ">Depende de quem atende sua conta</span>
+                        <span role="cell" class="comp-destaque">Toda semana, até nas semanas corridas</span>
+                    </div>
+                    <div class="comp-linha" role="row">
+                        <span role="rowheader">Entende de tatuagem</span>
+                        <span role="cell" data-rot="Sozinho: ">Você entende, mas falta tempo</span>
+                        <span role="cell" data-rot="Agência: ">Raramente</span>
+                        <span role="cell" class="comp-destaque">Feito só para tatuadores</span>
+                    </div>
+                    <div class="comp-linha" role="row">
+                        <span role="rowheader">Quem decide o que sai</span>
+                        <span role="cell" data-rot="Sozinho: ">Você</span>
+                        <span role="cell" data-rot="Agência: ">Muitas vezes, a agência</span>
+                        <span role="cell" class="comp-destaque">Sempre você</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- COMO FUNCIONA -->
-        <section id="como-funciona" class="funcionalidades-section">
-            <div class="container">
-                <h2 class="text-center" style="margin-bottom: 3rem;">Crie sua página em poucos minutos</h2>
-                <div class="grid-funcionalidades">
-                    <article class="feat-card">
-                        <div class="icon-wrapper" style="font-weight: 800; font-size: 1.5rem;">01</div>
-                        <h3>Crie seu perfil</h3>
-                        <p>Informe seu nome, cidade, estilos e adicione suas informações profissionais.</p>
-                    </article>
-                    <article class="feat-card">
-                        <div class="icon-wrapper" style="font-weight: 800; font-size: 1.5rem;">02</div>
-                        <h3>Mostre seus trabalhos</h3>
-                        <p>Adicione suas melhores tatuagens e monte seu portfólio.</p>
-                    </article>
-                    <article class="feat-card">
-                        <div class="icon-wrapper" style="font-weight: 800; font-size: 1.5rem;">03</div>
-                        <h3>Publique sua página</h3>
-                        <p>Seu perfil fica disponível em um link que você pode colocar na bio do Instagram, WhatsApp e
-                            outros canais.</p>
-                    </article>
-                    <article class="feat-card">
-                        <div class="icon-wrapper" style="font-weight: 800; font-size: 1.5rem;">04</div>
-                        <h3>Receba novos contatos</h3>
-                        <p>Seus clientes podem conhecer seu trabalho e solicitar um orçamento diretamente pela página.
-                        </p>
-                    </article>
-                </div>
-                <div class="text-center" style="margin-top: 50px;">
-                    <a href="http://app.inkers.com.br" class="cta-btn cta-large">Quero criar minha página</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- EXEMPLO VISUAL -->
-        <section id="exemplos" class="hero" style="background-color: #1a1a1a; padding: 6rem 0; text-align: center;">
-            <div class="container content">
-                <h2>Veja como sua página pode ficar</h2>
-                <p style="max-width: 800px; margin: 0 auto 2rem auto; font-size: 1.2rem;">Seu nome. Seu trabalho. Seu
-                    estilo. Seu espaço na internet.</p>
-                <div
-                    style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-                    <img src="assets/images/1.jpg" alt="Exemplo de Página do Artista 1"
-                        style="width: 100%; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 20px rgba(0,0,0,0.5);">
-                    <img src="assets/images/2.jpg" alt="Exemplo de Página do Artista 2"
-                        style="width: 100%; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 20px rgba(0,0,0,0.5);">
-                    <img src="assets/images/3.jpg" alt="Exemplo de Página do Artista 3"
-                        style="width: 100%; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 20px rgba(0,0,0,0.5);">
-                    <img src="assets/images/4.jpg" alt="Exemplo de Página do Artista 4"
-                        style="width: 100%; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 20px rgba(0,0,0,0.5);">
-                </div>
-                <div class="text-center" style="margin-top: 40px;">
-                    <a href="http://app.inkers.com.br" class="cta-btn cta-large">Criar minha página grátis</a>
+        <section id="como-funciona" class="secao">
+            <div class="wrap">
+                <header class="secao-topo revelar">
+                    <p class="rotulo">Como funciona</p>
+                    <h2>Você faz a tattoo. O resto a gente prepara.</h2>
+                </header>
+                <ol class="passos">
+                    <li class="passo revelar">
+                        <span class="passo-n">1</span>
+                        <h3>Terminou? Manda a foto.</h3>
+                        <p>Do seu celular, entre uma sessão e outra. Leva menos de um minuto.</p>
+                    </li>
+                    <li class="passo revelar">
+                        <span class="passo-n">2</span>
+                        <h3>A gente prepara a semana.</h3>
+                        <p>O texto no seu jeito de falar, o melhor dia e horário para postar e uma sequência que mistura
+                            trabalhos novos e antigos.</p>
+                    </li>
+                    <li class="passo revelar">
+                        <span class="passo-n">3</span>
+                        <h3>Você aprova com um toque.</h3>
+                        <p>Nada vai para as suas redes sem você ver antes. Não gostou de algo? Pede para ajustar.</p>
+                    </li>
+                    <li class="passo revelar">
+                        <span class="passo-n">4</span>
+                        <h3>O cliente chega e você fica sabendo.</h3>
+                        <p>Quem se interessa pede orçamento direto pela sua página, e o aviso chega no seu celular dizendo
+                            de onde aquela pessoa veio.</p>
+                    </li>
+                </ol>
+                <div class="centro revelar">
+                    <button type="button" class="btn btn-pri btn-lg" data-eu-quero="como-funciona">Eu quero</button>
                 </div>
             </div>
         </section>
 
-        <!-- INSTAGRAM E WHATSAPP -->
-        <section id="divulgacao" class="plataformas-section text-center"
-            style="background-color: var(--bg-dark); padding: 5rem 0;">
-            <div class="container">
-                <h2>O Instagram atrai a atenção. A sua página fecha o orçamento.</h2>
-                <p class="subtitle"
-                    style="margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">Seu Instagram
-                    é essencial para divulgar suas tatuagens, mas as redes sociais são cheias de distrações e concorrência.<br><br>Com o Inkers, seu link profissional na bio funciona como um verdadeiro <strong>funil de conversão</strong>. Você tira o cliente do barulho das redes e o leva para um ambiente exclusivo seu, focado em mostrar seu valor e guiá-lo diretamente para fechar negócio.
-                </p>
-
-                <div
-                    style="max-width: 600px; margin: 0 auto 5rem; text-align: center; font-size: 1.2rem; line-height: 2; font-weight: 600;">
-                    <p>Instagram</p>
-                    <p style="color: var(--primary-color);">↓</p>
-                    <p>Link na bio</p>
-                    <p style="color: var(--primary-color);">↓</p>
-                    <p>Página profissional</p>
-                    <p style="color: var(--primary-color);">↓</p>
-                    <p>Portfólio</p>
-                    <p style="color: var(--primary-color);">↓</p>
-                    <p>Solicitação de orçamento</p>
-                </div>
-
-                <h2 style="color: #ff4a4a; margin-top: 2rem;">Ainda manda várias fotos pelo WhatsApp para mostrar seu
-                    trabalho?</h2>
-                <p class="subtitle"
-                    style="margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">Crie um único
-                    link com seu portfólio, informações e formas de contato. Quando alguém pedir para conhecer seu
-                    trabalho, basta enviar sua página.</p>
-                <a href="http://app.inkers.com.br" class="cta-btn cta-large">Criar meu portfólio online</a>
+        <!-- POR DENTRO -->
+        <section id="por-dentro" class="secao secao-escura">
+            <div class="wrap">
+                <header class="secao-topo revelar">
+                    <p class="rotulo">Por dentro do app</p>
+                    <h2>Simples como deveria ser.</h2>
+                    <p class="secao-sub">Telas de exemplo com tatuadores fictícios (Marina, Caio e Lia), para você ver
+                        como fica no dia a dia.</p>
+                </header>
             </div>
-        </section>
-
-        <!-- BENEFÍCIOS -->
-        <section id="beneficios" class="funcionalidades-section">
-            <div class="container">
-                <h2 class="text-center" style="margin-bottom: 3rem;">Feita para a rotina de quem tatua</h2>
-                <div class="grid-funcionalidades">
-                    <article class="feat-card">
-                        <div class="icon-wrapper">🖼️</div>
-                        <h3>Seu portfólio em um só lugar</h3>
-                        <p>Reúna seus melhores trabalhos e facilite a apresentação do seu estilo.</p>
-                    </article>
-                    <article class="feat-card">
-                        <div class="icon-wrapper">🔗</div>
-                        <h3>Um link para divulgar</h3>
-                        <p>Coloque sua página na bio do Instagram, envie pelo WhatsApp ou compartilhe onde quiser.</p>
-                    </article>
-                    <article class="feat-card">
-                        <div class="icon-wrapper">⭐</div>
-                        <h3>Mais profissionalismo</h3>
-                        <p>Apresente seu trabalho de forma organizada e profissional.</p>
-                    </article>
-                    <article class="feat-card">
-                        <div class="icon-wrapper">🤝</div>
-                        <h3>Mais facilidade para o cliente</h3>
-                        <p>Seu cliente encontra suas informações e sabe exatamente como entrar em contato.</p>
-                    </article>
-                    <article class="feat-card">
-                        <div class="icon-wrapper">🎯</div>
-                        <h3>Ambiente sem distrações</h3>
-                        <p>Tire o cliente da rede social e leve-o para um funil focado em fechar negócio com você.</p>
-                    </article>
-                    <article class="feat-card">
-                        <div class="icon-wrapper">💬</div>
-                        <h3>Solicitação de orçamento</h3>
-                        <p>Facilite o primeiro contato e transforme interesse em oportunidade.</p>
-                    </article>
+            <div class="vitrine" data-vitrine>
+                <ul class="vitrine-trilho" data-trilho>
+                    <li class="vitrine-item">
+                        <div class="celular"><img src="assets/images/app/inicio.webp" width="660" height="1428" loading="lazy"
+                                alt="Tela inicial do app da tatuadora fictícia Marina: 3 pedidos novos, 4 posts para aprovar e o relatório da semana pronto."></div>
+                        <h3>Tudo o que precisa de você, numa tela só</h3>
+                        <p>Marina abre o app de manhã e já sabe o que aprovar, quem responder e quantos pedidos entraram.</p>
+                    </li>
+                    <li class="vitrine-item">
+                        <div class="celular"><img src="assets/images/app/aprovar.webp" width="660" height="1428" loading="lazy"
+                                alt="Plano da semana do tatuador fictício Caio, com um post de mandala em blackwork pronto, com texto e horário, esperando aprovação."></div>
+                        <h3>Sua semana pronta para aprovar</h3>
+                        <p>O post do Caio chega com texto e horário definidos. Ele confere, aprova e volta para a maca.</p>
+                    </li>
+                    <li class="vitrine-item">
+                        <div class="celular"><img src="assets/images/app/pedidos.webp" width="660" height="1428" loading="lazy"
+                                alt="Lista de pedidos de orçamento da tatuadora fictícia Lia, cada um com o que o cliente quer e de onde ele veio."></div>
+                        <h3>Pedidos organizados, não perdidos</h3>
+                        <p>Cada pedido da Lia chega com o que o cliente quer, o tamanho, o local do corpo e de onde ele veio.</p>
+                    </li>
+                    <li class="vitrine-item">
+                        <div class="celular"><img src="assets/images/app/pagina.webp" width="660" height="1428" loading="lazy"
+                                alt="Página profissional da tatuadora fictícia Lia Okada, de Florianópolis, com portfólio de aquarela e botão de pedir orçamento."></div>
+                        <h3>Uma vitrine que trabalha por você</h3>
+                        <p>A página da Lia mostra o portfólio e recebe pedidos de orçamento a qualquer hora, até quando ela
+                            está dormindo.</p>
+                    </li>
+                    <li class="vitrine-item">
+                        <div class="celular"><img src="assets/images/app/semana.webp" width="660" height="1428" loading="lazy"
+                                alt="Resumo semanal do tatuador fictício Caio: 6 pedidos de orçamento, o post que mais trouxe gente e uma dica para a próxima semana."></div>
+                        <h3>Saiba o que traz cliente</h3>
+                        <p>Toda semana, um resumo simples do que deu resultado e do que vale fazer na semana seguinte.</p>
+                    </li>
+                </ul>
+                <div class="wrap vitrine-controles">
+                    <button type="button" class="seta" data-anterior aria-label="Tela anterior">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+                    <div class="pontos" data-pontos aria-hidden="true"></div>
+                    <button type="button" class="seta" data-proximo aria-label="Próxima tela">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
                 </div>
             </div>
         </section>
 
-        <!-- INTRODUÇÃO DA GESTÃO -->
-        <section id="gestao" class="plataformas-section" style="background-color: var(--bg-dark); padding: 5rem 0;">
-            <div class="container">
-                <h2 class="text-center" style="margin-bottom: 1rem;">E quando os clientes começarem a chegar?</h2>
-                <p class="subtitle text-center"
-                    style="margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">O Inkers pode
-                    acompanhar você além da sua página. Quando quiser organizar melhor seu estúdio, você também pode
-                    contar com ferramentas para gerenciar clientes, orçamentos, agenda, anamnese, financeiro, estoque e
-                    muito mais.</p>
+        <!-- HONESTIDADE -->
+        <section class="secao">
+            <div class="wrap honesto">
+                <header class="secao-topo secao-topo-esq revelar">
+                    <p class="rotulo">Papo reto</p>
+                    <h2>Sem promessa milagrosa.</h2>
+                    <p class="secao-sub">Preferimos ser diretos com você desde o começo.</p>
+                </header>
+                <ul class="verdades">
+                    <li class="revelar">
+                        <h3>Quem traz o cliente é o seu trabalho.</h3>
+                        <p>O Inkers garante que ele seja visto com constância. E constância é justamente o que quase ninguém
+                            consegue manter sozinho.</p>
+                    </li>
+                    <li class="revelar">
+                        <h3>Resultado leva algumas semanas.</h3>
+                        <p>Presença nas redes se constrói post a post. Não acontece da noite para o dia, mas acontece.</p>
+                    </li>
+                    <li class="revelar">
+                        <h3>Você continua no controle.</h3>
+                        <p>Nada é publicado sem a sua aprovação, e o atendimento ao cliente continua sendo seu, do seu jeito.</p>
+                    </li>
+                    <li class="revelar">
+                        <h3>Estamos crescendo junto com você.</h3>
+                        <p>O Inkers está em acesso antecipado e evolui a partir do que os tatuadores pedem. A sua opinião
+                            muda o produto.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-                <div class="grid-funcionalidades"
-                    style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
-                    <article class="feat-card"
-                        style="background: transparent; border: 1px solid rgba(255,255,255,0.1); padding: 20px;">
-                        <h3 style="margin-bottom: 10px; font-size: 1.1rem;">Clientes</h3>
-                        <p style="font-size: 0.9rem;">Organize seus contatos e histórico.</p>
+        <!-- PARA QUEM É -->
+        <section class="secao secao-escura">
+            <div class="wrap">
+                <header class="secao-topo revelar">
+                    <p class="rotulo">Para quem é</p>
+                    <h2>Feito para quem vive de tatuagem.</h2>
+                </header>
+                <div class="perfis">
+                    <article class="perfil revelar">
+                        <h3>Tatuador autônomo</h3>
+                        <p>Que faz tudo sozinho: atende, desenha, tatua, cobra e ainda tenta aparecer nas redes.</p>
                     </article>
-                    <article class="feat-card"
-                        style="background: transparent; border: 1px solid rgba(255,255,255,0.1); padding: 20px;">
-                        <h3 style="margin-bottom: 10px; font-size: 1.1rem;">Orçamentos</h3>
-                        <p style="font-size: 0.9rem;">Acompanhe oportunidades desde o primeiro contato.</p>
+                    <article class="perfil revelar">
+                        <h3>Quem está começando</h3>
+                        <p>E precisa ser encontrado por clientes que ainda não conhecem o seu trabalho.</p>
                     </article>
-                    <article class="feat-card"
-                        style="background: transparent; border: 1px solid rgba(255,255,255,0.1); padding: 20px;">
-                        <h3 style="margin-bottom: 10px; font-size: 1.1rem;">Agenda</h3>
-                        <p style="font-size: 0.9rem;">Organize seus horários e sessões.</p>
+                    <article class="perfil revelar">
+                        <h3>Estúdio pequeno</h3>
+                        <p>Com agenda cheia de sessões e ninguém com tempo para cuidar da divulgação.</p>
                     </article>
-                    <article class="feat-card"
-                        style="background: transparent; border: 1px solid rgba(255,255,255,0.1); padding: 20px;">
-                        <h3 style="margin-bottom: 10px; font-size: 1.1rem;">Anamnese</h3>
-                        <p style="font-size: 0.9rem;">Mantenha os registros dos seus clientes organizados.</p>
+                    <article class="perfil revelar">
+                        <h3>Quem já tem nome</h3>
+                        <p>Mas some das redes quando a agenda enche e sente o movimento cair logo depois.</p>
                     </article>
-                    <article class="feat-card"
-                        style="background: transparent; border: 1px solid rgba(255,255,255,0.1); padding: 20px;">
-                        <h3 style="margin-bottom: 10px; font-size: 1.1rem;">Financeiro</h3>
-                        <p style="font-size: 0.9rem;">Tenha uma visão mais clara do dinheiro que entra e sai.</p>
-                    </article>
-                    <article class="feat-card"
-                        style="background: transparent; border: 1px solid rgba(255,255,255,0.1); padding: 20px;">
-                        <h3 style="margin-bottom: 10px; font-size: 1.1rem;">Estoque</h3>
-                        <p style="font-size: 0.9rem;">Saiba o que você tem e o que precisa repor.</p>
-                    </article>
-                </div>
-
-                <div class="text-center" style="margin-top: 4rem;">
-                    <h3 style="color: var(--primary-color); font-size: 1.5rem;">Comece pela sua página. Evolua no seu
-                        ritmo.</h3>
-                    <p style="margin-top: 10px; font-size: 1.1rem;">Você não precisa começar usando tudo. Comece pelo
-                        que você precisa agora.</p>
                 </div>
             </div>
         </section>
 
-        <!-- OBJEÇÕES / TECNOLOGIA -->
-        <section class="garantia-section text-center" style="padding: 5rem 0;">
-            <div class="container">
-                <h2 style="margin-bottom: 1.5rem;">Você não precisa entender de tecnologia.</h2>
-                <p class="subtitle"
-                    style="margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">Você não
-                    precisa criar um site, contratar hospedagem ou aprender programação. Basta adicionar suas
-                    informações e seus trabalhos. O Inkers cuida do resto.</p>
-                <a href="http://app.inkers.com.br" class="cta-btn cta-large">Criar minha página grátis</a>
-            </div>
-        </section>
-
-        <!-- PREÇO -->
-        <section id="planos" class="planos-section" style="background-color: var(--bg-dark); padding: 5rem 0;">
-            <div class="container text-center">
-                <h2>Comece gratuitamente</h2>
-
-                <div class="grid-planos" style="grid-template-columns: 1fr; max-width: 400px; margin: 3rem auto 0;">
-                    <article class="plano-card destaque" style="padding: 40px;">
-                        <h3 style="font-size: 1.5rem;">Página profissional</h3>
-                        <p class="preco" style="font-size: 3rem;">R$ 0</p>
-                        <ul style="text-align: left; margin: 2rem 0; gap: 10px; display: flex; flex-direction: column;">
-                            <li>✅ Página profissional</li>
-                            <li>✅ Portfólio</li>
-                            <li>✅ Informações profissionais</li>
-                            <li>✅ Link para divulgação</li>
-                            <li>✅ Contato com clientes</li>
-                            <li>✅ Solicitação de orçamento</li>
-                        </ul>
-                        <a href="http://app.inkers.com.br" class="cta-btn plano-btn cta-large"
-                            style="width: 100%;">Criar minha página grátis</a>
-                        <p style="margin-top: 15px; font-size: 0.9rem; color: #aaa;">Sem cartão de crédito. Comece
-                            agora.</p>
-                    </article>
-                </div>
-
-                <div style="margin-top: 4rem; padding-top: 3rem; border-top: 1px solid rgba(255,255,255,0.05);">
-                    <h3 style="margin-bottom: 10px;">Gestão do estúdio</h3>
-                    <p style="margin-bottom: 20px; color: #aaa;">Quando precisar de mais organização, desbloqueie as
-                        ferramentas de gestão do Inkers.</p>
-                    <a href="#gestao" style="color: var(--primary-color); font-weight: 600;">Conhecer ferramentas de
-                        gestão →</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- BETA / PRIMEIROS TATUADORES -->
-        <section class="plataformas-section text-center" style="padding: 5rem 0;">
-            <div class="container">
-                <div class="badge"
-                    style="position: static; display: inline-block; transform: none; margin-bottom: 20px;">Acesso Beta
-                </div>
-                <h2>Faça parte dos primeiros tatuadores do Inkers</h2>
-                <p class="subtitle"
-                    style="margin-bottom: 2.5rem; max-width: 800px; margin-left: auto; margin-right: auto;">Estamos
-                    construindo uma nova forma de tatuadores apresentarem seu trabalho e organizarem seus
-                    estúdios.<br><br>Entre gratuitamente, crie sua página e ajude a construir as próximas
-                    funcionalidades do Inkers.</p>
-                <a href="http://app.inkers.com.br" class="cta-btn cta-large">Quero participar</a>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section id="faq" class="garantia-section" style="background-color: #111; padding: 5rem 0;">
-            <div class="container">
-                <h2 class="text-center" style="margin-bottom: 3rem;">Perguntas Frequentes</h2>
-                <div style="max-width: 800px; margin: 0 auto; text-align: left;">
-                    <div
-                        style="margin-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 1.5rem;">
-                        <h4 style="color: var(--primary-color); margin-bottom: 10px; font-size: 1.2rem;">Preciso ter
-                            conhecimento técnico?</h4>
-                        <p style="color: #ccc;">Não. Você cria sua página adicionando suas informações e trabalhos. Não
-                            precisa programar nem contratar alguém para desenvolver seu site.</p>
-                    </div>
-                    <div
-                        style="margin-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 1.5rem;">
-                        <h4 style="color: var(--primary-color); margin-bottom: 10px; font-size: 1.2rem;">Preciso ter um
-                            estúdio?</h4>
-                        <p style="color: #ccc;">Não. O Inkers também pode ser usado por tatuadores que trabalham de
-                            forma independente.</p>
-                    </div>
-                    <div
-                        style="margin-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 1.5rem;">
-                        <h4 style="color: var(--primary-color); margin-bottom: 10px; font-size: 1.2rem;">Posso colocar o
-                            link no Instagram?</h4>
-                        <p style="color: #ccc;">Sim. Sua página pode ser compartilhada na bio do Instagram, WhatsApp e
-                            outros canais.</p>
-                    </div>
-                    <div
-                        style="margin-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 1.5rem;">
-                        <h4 style="color: var(--primary-color); margin-bottom: 10px; font-size: 1.2rem;">Posso mostrar
-                            meu portfólio?</h4>
-                        <p style="color: #ccc;">Sim. Sua página foi pensada para apresentar seus trabalhos e seu estilo.
-                        </p>
-                    </div>
-                    <div
-                        style="margin-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 1.5rem;">
-                        <h4 style="color: var(--primary-color); margin-bottom: 10px; font-size: 1.2rem;">Meu cliente
-                            consegue entrar em contato comigo?</h4>
-                        <p style="color: #ccc;">Sim. A página pode disponibilizar seus canais de contato e recursos para
-                            solicitação de orçamento.</p>
-                    </div>
-                    <div
-                        style="margin-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 1.5rem;">
-                        <h4 style="color: var(--primary-color); margin-bottom: 10px; font-size: 1.2rem;">Preciso usar as
-                            ferramentas de gestão?</h4>
-                        <p style="color: #ccc;">Não. Você pode começar apenas com sua página e utilizar as ferramentas
-                            de gestão conforme sua necessidade.</p>
-                    </div>
-                    <div style="margin-bottom: 2.5rem;">
-                        <h4 style="color: var(--primary-color); margin-bottom: 10px; font-size: 1.2rem;">É grátis?</h4>
-                        <p style="color: #ccc;">Você pode criar sua página gratuitamente. As ferramentas adicionais de
-                            gestão podem ser apresentadas separadamente conforme o modelo comercial do Inkers.</p>
-                    </div>
+        <!-- DÚVIDAS -->
+        <section id="duvidas" class="secao">
+            <div class="wrap duvidas-grid">
+                <header class="secao-topo secao-topo-esq revelar">
+                    <p class="rotulo">Dúvidas</p>
+                    <h2>Perguntas que todo tatuador faz.</h2>
+                    <p class="secao-sub">Ficou alguma? Escreva para <a href="mailto:brunnoribeiroangra21@gmail.com">nosso suporte</a>.</p>
+                </header>
+                <div class="faq">
+                    <details>
+                        <summary>Preciso entender de marketing ou de redes sociais?</summary>
+                        <p>Não. Você manda a foto do trabalho e confere o que foi preparado. A parte de pensar no texto, no
+                            dia e no horário fica com a gente.</p>
+                    </details>
+                    <details>
+                        <summary>Vai publicar alguma coisa sem eu ver?</summary>
+                        <p>Nunca. Tudo passa por você antes. Se não gostar, pede ajuste ou descarta.</p>
+                    </details>
+                    <details>
+                        <summary>Quanto tempo vou gastar por semana?</summary>
+                        <p>Mandar uma foto leva menos de um minuto. Conferir e aprovar a semana costuma levar uns 10 a 15
+                            minutos.</p>
+                    </details>
+                    <details>
+                        <summary>Funciona para quem trabalha sozinho, sem estúdio?</summary>
+                        <p>Sim. Foi pensado primeiro para o tatuador que faz tudo sozinho.</p>
+                    </details>
+                    <details>
+                        <summary>E as fotos dos meus clientes?</summary>
+                        <p>Você escolhe quais trabalhos aparecem. Se o cliente preferir não mostrar a tattoo, ela fica
+                            guardada só para você.</p>
+                    </details>
+                    <details>
+                        <summary>Quanto custa?</summary>
+                        <p>Estamos em acesso antecipado. Deixando seu contato, você entra na lista e conhece todas as
+                            condições antes de decidir qualquer coisa. Sem compromisso.</p>
+                    </details>
+                    <details>
+                        <summary>O que acontece quando eu clico em “Eu quero”?</summary>
+                        <p>Você deixa seu nome e WhatsApp e entra na lista do acesso antecipado. A gente fala com você e,
+                            se quiser, você já pode abrir o app na hora.</p>
+                    </details>
                 </div>
             </div>
         </section>
 
         <!-- CTA FINAL -->
-        <section class="hero" style="padding: 6rem 0; text-align: center; background-color: var(--bg-dark);">
-            <div class="container content">
-                <h2>Seu trabalho já existe. Agora dê um lugar para ele.</h2>
-                <p style="max-width: 600px; margin: 1rem auto 2.5rem auto; font-size: 1.2rem;">Crie sua página
-                    profissional de tatuador gratuitamente e compartilhe seu trabalho com quem precisa encontrá-lo.</p>
-                <a href="http://app.inkers.com.br" class="cta-btn cta-large">Criar minha página grátis</a>
-                <p style="margin-top: 15px; font-size: 0.9rem; color: #aaa;">Sem cartão. Sem complicação.</p>
+        <section class="final">
+            <div class="wrap final-in revelar">
+                <span class="final-icone" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M14.086 18.412A2 2 0 0 1 12.67 19H5v-7.672a2 2 0 0 1 .586-1.414L11.75 3.75a6 6 0 1 1 8.49 8.49z"/><path d="M16 8 2 22"/><path d="M17.488 15H9"/></svg>
+                </span>
+                <h2>Seu trabalho merece ser visto. Toda semana, não só quando sobra tempo.</h2>
+                <p>Entre para o acesso antecipado e tenha uma agência de marketing só sua, no seu bolso.</p>
+                <button type="button" class="btn btn-pri btn-lg" data-eu-quero="final">Eu quero</button>
+                <small>Sem compromisso. Leva menos de um minuto.</small>
             </div>
         </section>
     </main>
 
-    <footer id="contato" class="footer">
-        <div class="container footer-content">
-            <div class="footer-info">
-                <a href="index.html" class="logo" aria-label="Página Inicial do Inkers">
-                    <img src="assets/inkers_logo.png" alt="Inkers Logo" style="height: 40px; width: auto;">
+    <footer class="rodape">
+        <div class="wrap rodape-in">
+            <div>
+                <a href="#inicio" class="marca">
+                    <span class="marca-icone" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M14.086 18.412A2 2 0 0 1 12.67 19H5v-7.672a2 2 0 0 1 .586-1.414L11.75 3.75a6 6 0 1 1 8.49 8.49z"/><path d="M16 8 2 22"/><path d="M17.488 15H9"/></svg>
+                    </span>
+                    Inkers
                 </a>
-                <p>A tecnologia que o mercado da tatuagem precisava.</p>
+                <p>Sua agência de marketing pessoal, na palma da mão.</p>
             </div>
-            <div class="footer-links">
-                <h4>Navegação</h4>
-                <ul>
-                    <li><a href="#hero">Início</a></li>
-                    <li><a href="#como-funciona">Como funciona</a></li>
-                    <li><a href="#exemplos">Exemplos</a></li>
-                    <li><a href="#beneficios">Recursos</a></li>
-                    <li><a href="http://app.inkers.com.br">Criar minha página</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="termos-de-uso.html">Termos de Uso</a></li>
-                    <li><a href="politica-de-privacidade.html">Privacidade</a></li>
-                    <li><a href="exclusao-de-dados.html">Exclusão de Dados</a></li>
-                    <li><a href="suporte.html">Suporte</a></li>
-                </ul>
-            </div>
+            <nav aria-label="Links legais" class="rodape-links">
+                <a href="termos-de-uso.html">Termos de Uso</a>
+                <a href="politica-de-privacidade.html">Privacidade</a>
+                <a href="exclusao-de-dados.html">Exclusão de Dados</a>
+                <a href="suporte.html">Suporte</a>
+                <a href="https://app.inkers.com.br">Já tenho conta</a>
+            </nav>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Inkers. Todos os direitos reservados. Este sistema utiliza a Gemini API do Google.</p>
-        </div>
+        <p class="wrap rodape-fim">&copy; 2026 Inkers. Todos os direitos reservados. Este sistema utiliza a Gemini API do Google.</p>
     </footer>
 
-    <!-- Deferred JS -->
-    <script src="js/main.js" defer></script>
+    <!-- Barra fixa no celular -->
+    <div class="barra-cta" data-barra>
+        <span>Sua agência de marketing no bolso</span>
+        <button type="button" class="btn btn-pri btn-sm" data-eu-quero="barra">Eu quero</button>
+    </div>
+
+    <!-- Formulário "Eu quero" -->
+    <dialog class="modal" data-modal aria-labelledby="modal-titulo">
+        <button type="button" class="modal-fechar" data-fechar aria-label="Fechar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+
+        <form class="modal-form" data-form novalidate>
+            <span class="modal-icone" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M14.086 18.412A2 2 0 0 1 12.67 19H5v-7.672a2 2 0 0 1 .586-1.414L11.75 3.75a6 6 0 1 1 8.49 8.49z"/><path d="M16 8 2 22"/><path d="M17.488 15H9"/></svg>
+            </span>
+            <h2 id="modal-titulo">Que bom ter você aqui.</h2>
+            <p class="modal-sub">Deixe seu contato para entrar no acesso antecipado. A gente fala com você pelo WhatsApp,
+                sem spam.</p>
+
+            <label class="campo">
+                <span>Seu nome</span>
+                <input name="nome" type="text" autocomplete="name" required maxlength="80" placeholder="Como você quer ser chamado">
+            </label>
+            <label class="campo">
+                <span>WhatsApp</span>
+                <input name="whatsapp" type="tel" inputmode="tel" autocomplete="tel-national" required maxlength="20"
+                    placeholder="(00) 00000-0000">
+            </label>
+            <div class="campo-duplo">
+                <label class="campo">
+                    <span>Instagram <small>(opcional)</small></span>
+                    <input name="instagram" type="text" autocomplete="off" maxlength="40" placeholder="@seuperfil"
+                        autocapitalize="none" spellcheck="false">
+                </label>
+                <label class="campo">
+                    <span>Cidade <small>(opcional)</small></span>
+                    <input name="cidade" type="text" autocomplete="address-level2" maxlength="60" placeholder="Sua cidade">
+                </label>
+            </div>
+            <label class="isca" aria-hidden="true">Site <input name="site" type="text" tabindex="-1" autocomplete="off"></label>
+
+            <p class="modal-erro" data-erro role="alert" hidden></p>
+            <button type="submit" class="btn btn-pri btn-lg btn-cheio" data-enviar>Eu quero entrar</button>
+            <p class="modal-legal">Ao enviar, você concorda com a nossa <a href="politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</p>
+        </form>
+
+        <div class="modal-ok" data-ok hidden>
+            <span class="ok-icone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <h2 data-ok-titulo>Pronto, você está na lista!</h2>
+            <p data-ok-texto>A gente vai falar com você pelo WhatsApp em breve. Se quiser, já pode abrir o app e começar
+                agora.</p>
+            <a class="btn btn-pri btn-lg btn-cheio" href="https://app.inkers.com.br" data-abrir-app>Abrir o Inkers</a>
+            <button type="button" class="btn btn-link btn-cheio" data-fechar>Fechar</button>
+        </div>
+    </dialog>
+
+    <script src="js/landing.js?v=2" defer></script>
 </body>
 
 </html>
