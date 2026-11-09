@@ -77,6 +77,91 @@
     atualizar();
   }
 
+  // ---------- Baralho do hero: deslize para trocar de tela ----------
+  const baralho = $('[data-baralho]');
+  if (baralho) {
+    const area = $('.baralho', baralho);
+    const cartas = $$('.carta', area);
+    const pontos = $('[data-baralho-pontos]', baralho);
+    const titulo = $('[data-aviso-titulo]', baralho);
+    const sub = $('[data-aviso-sub]', baralho);
+    const texto = $('.aviso-texto', baralho);
+    const n = cartas.length;
+    let atual = 0;
+    let ocupado = false;
+    cartas.forEach(() => pontos.appendChild(document.createElement('span')));
+
+    const pos = (i) => ((i % n) + n) % n;
+    const aplicar = () => {
+      cartas.forEach((c, i) => {
+        c.classList.remove('frente', 'atras');
+        if (i === atual) c.classList.add('frente');
+        else if (i === pos(atual + 1)) c.classList.add('atras');
+      });
+      $$('span', pontos).forEach((p, i) => p.classList.toggle('ativo', i === atual));
+      const [t, s] = (cartas[atual].dataset.aviso || '|').split('|');
+      texto.classList.add('trocando');
+      setTimeout(() => { titulo.textContent = t; sub.textContent = s; texto.classList.remove('trocando'); }, 220);
+    };
+
+    const ir = (dir) => {
+      if (ocupado) return;
+      ocupado = true;
+      const sai = cartas[atual];
+      sai.classList.remove('arrastando', 'cutuca', 'frente');
+      sai.style.removeProperty('--dx');
+      sai.style.removeProperty('--dr');
+      sai.classList.add(dir > 0 ? 'sai-esq' : 'sai-dir');
+      atual = pos(atual + dir);
+      aplicar();
+      setTimeout(() => { sai.classList.remove('sai-esq', 'sai-dir'); ocupado = false; }, 480);
+    };
+
+    // Arrastar com o dedo (ou mouse): a carta da frente acompanha o gesto
+    let inicioX = 0, inicioY = 0, dx = 0, arrastando = false, decidido = false;
+    area.addEventListener('pointerdown', (e) => {
+      if (ocupado || (e.pointerType === 'mouse' && e.button !== 0)) return;
+      inicioX = e.clientX; inicioY = e.clientY; dx = 0; arrastando = true; decidido = false;
+      cartas[atual].classList.remove('cutuca');
+    });
+    area.addEventListener('pointermove', (e) => {
+      if (!arrastando) return;
+      const mx = e.clientX - inicioX, my = e.clientY - inicioY;
+      if (!decidido) {
+        if (Math.abs(mx) < 6 && Math.abs(my) < 6) return;
+        decidido = true;
+        // gesto mais vertical: deixa a página rolar
+        if (Math.abs(my) > Math.abs(mx)) { arrastando = false; return; }
+        try { area.setPointerCapture(e.pointerId); } catch (_) { /* ok */ }
+        cartas[atual].classList.add('arrastando');
+      }
+      dx = mx;
+      const c = cartas[atual];
+      c.style.setProperty('--dx', `${dx}px`);
+      c.style.setProperty('--dr', `${dx / 18}deg`);
+    });
+    const soltar = () => {
+      if (!arrastando) return;
+      arrastando = false;
+      const c = cartas[atual];
+      if (!decidido) { ir(1); return; } // toque simples: próxima tela
+      if (Math.abs(dx) > 50) { ir(dx < 0 ? 1 : -1); return; }
+      c.classList.remove('arrastando');
+      c.style.removeProperty('--dx');
+      c.style.removeProperty('--dr');
+    };
+    area.addEventListener('pointerup', soltar);
+    area.addEventListener('pointercancel', soltar);
+
+    $('[data-baralho-prox]', baralho).addEventListener('click', () => ir(1));
+    $('[data-baralho-ant]', baralho).addEventListener('click', () => ir(-1));
+
+    aplicar();
+    // Uma "cutucada" na primeira vez, sugerindo que dá para deslizar
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) cartas[0].classList.add('cutuca');
+    cartas[0].addEventListener('animationend', () => cartas[0].classList.remove('cutuca'), { once: true });
+  }
+
   // ---------- Formulário "Eu quero" ----------
   const modal = $('[data-modal]');
   const form = $('[data-form]');
