@@ -3,39 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Central de Suporte do aplicativo Inkers.">
-    
+    <meta name="description" content="Central de suporte do Inkers: como falar com a gente e como desconectar Instagram, Facebook e Google.">
+
     <title>Suporte | Inkers</title>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="/assets/pena.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/pena-32.png">
     <link rel="apple-touch-icon" href="/assets/pena-180.png">
-    
+    <link rel="canonical" href="https://inkers.com.br/suporte.html">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet" />
-    
+
     <link rel="stylesheet" href="css/style.css">
-    
+
     <style>
         .page-content { padding-top: 150px; padding-bottom: 100px; max-width: 800px; margin: 0 auto; }
-        .page-content h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 1.5rem; color: var(--accent-color); }
-        .page-content h2 { font-size: 1.8rem; margin-top: 3rem; margin-bottom: 1rem; color: #fff; }
-        .page-content p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+        .page-content h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.5rem; color: var(--accent-color); }
+        .page-content h2 { font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1rem; color: #fff; text-align: left; }
+        .page-content p, .page-content ul, .page-content ol { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+        .page-content ul, .page-content ol { padding-left: 20px; }
+        .page-content li { margin-bottom: 10px; }
         .page-content a { color: var(--accent-color); text-decoration: underline; }
-        
+        .page-content a:hover { color: var(--accent-hover); }
+        .email-box { background-color: var(--secondary-color); padding: 25px; border-radius: 12px; border: 1px solid var(--accent-color); text-align: center; margin: 30px 0; }
+        .email-box a { font-size: 1.5rem; font-weight: 800; text-decoration: none; }
+        .email-box p { margin-bottom: 10px; color: #fff; }
         .step-box { background-color: var(--secondary-color); padding: 20px; border-radius: 12px; border-left: 5px solid var(--accent-color); margin-bottom: 15px; }
         .step-box p { color: #f4f4f4; margin: 0; font-size: 1.1rem; }
         .step-box span { font-weight: 800; color: var(--accent-color); margin-right: 10px; }
-        
-        .contact-card { text-align: center; padding: 40px; background: var(--secondary-color); border-radius: 20px; margin-top: 40px; }
-        .contact-card a { font-size: 1.5rem; font-weight: 800; text-decoration: none; display: inline-block; margin-top: 20px; }
+        .empresa { font-size: .95rem; margin: 0; color: var(--text-muted); }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="container header-inner">
-            <a href="index.html" class="logo"><img src="assets/inkers_logo.png" alt="Inkers" style="height: 40px; width: auto;"></a>
+            <a href="index.html" class="logo" aria-label="Página inicial do Inkers"><img src="assets/inkers_logo.png" alt="Inkers" style="height: 40px; width: auto;"></a>
             <nav id="main-nav" class="nav" style="display: block; position: static; background: none; border: none; padding: 0;">
                 <ul style="flex-direction: row; gap: 2.5rem;"><li><a href="index.html">Voltar ao Início</a></li></ul>
             </nav>
@@ -44,27 +48,34 @@
 
     <main class="page-content container">
         <h1>Central de Suporte</h1>
-        <p>Problemas com a sua página ou integrações? Nossa equipe técnica está altamente treinada para resolver obstáculos para que você continue focado em tatuar.</p>
+        <p>Problema com o app, com a sua página ou com uma conta conectada? Escreva para a gente.</p>
 
-        <h2>Como desconectar o Google Calendar da sua conta</h2>
-        <p>Caso deseje interromper a sincronização da agenda fora do painel administrativo do Inkers, você pode realizar isso pelo painel de Conexões do lado do próprio Google. Siga os passos:</p>
-        
-        <div class="step-box"><span>Passo 1:</span> Acesse sua Conta do Google abrindo a URL: <a href="https://myaccount.google.com/connections" target="_blank">myaccount.google.com/connections</a>.</div>
-        <div class="step-box"><span>Passo 2:</span> Faça o login se necessário e vá na categoria <b>"Apps e serviços de terceiros"</b>.</div>
-        <div class="step-box"><span>Passo 3:</span> Localize o aplicativo <b>Inkers</b> na lista de acessos.</div>
-        <div class="step-box"><span>Passo 4:</span> Clique no aplicativo e role a tela até o final, clicando em <b>"Excluir todas as conexões necessárias com Inkers"</b> e confirme.</div>
-        <p style="margin-top: 15px; font-size: 0.95rem;">* O Inkers não possuirá mais acesso passivo ao seu calendário ou agenda imediatamente após a execução desse fluxo.</p>
+        <h2>Como desconectar o Instagram ou o Facebook</h2>
+        <div class="step-box"><span>Passo 1:</span> No Facebook, vá em <b>Configurações e privacidade</b> &gt; <b>Configurações</b> &gt; <b>Integrações de negócios</b>.</div>
+        <div class="step-box"><span>Passo 2:</span> Localize <b>InkersDivulga</b> (Inkers) e clique em <b>Remover</b>.</div>
+        <p style="font-size: 0.95rem;">O Inkers perde o acesso na hora e deixa de publicar, ler métricas e receber mensagens dessa conta.</p>
 
-        <div class="contact-card">
-            <h2>Abra um Ticket Conosco</h2>
-            <p>Se você prefere ajuda humana para configurar sua Ficha de Anamnese, faturamento ou necessita excluir seus dados da plataforma de forma permanente, mande um e-mail para nós:</p>
-            <a href="mailto:brunnoribeiroangra21@gmail.com">brunnoribeiroangra21@gmail.com</a>
+        <h2>Como desconectar o Google</h2>
+        <div class="step-box"><span>Passo 1:</span> Acesse <a href="https://myaccount.google.com/connections" target="_blank" rel="noopener noreferrer">myaccount.google.com/connections</a>.</div>
+        <div class="step-box"><span>Passo 2:</span> Em <b>Apps e serviços de terceiros</b>, localize o <b>Inkers</b>.</div>
+        <div class="step-box"><span>Passo 3:</span> Clique em <b>Excluir todas as conexões</b> com o Inkers e confirme.</div>
+
+        <h2>Apagar minha conta</h2>
+        <p>Veja o passo a passo na página <a href="exclusao-de-dados.html">Exclusão de Dados</a>.</p>
+
+        <div class="email-box">
+            <p>Fale com o suporte:</p>
+            <a href="mailto:contato@inkers.com.br">contato@inkers.com.br</a>
+            <p style="margin-top: 14px; font-size: 1rem;">Telefone: <a href="tel:+5524998564421">(24) 99856-4421</a></p>
         </div>
     </main>
 
     <footer id="contato" class="footer">
         <div class="container footer-content">
-            <div class="footer-info"><img src="assets/inkers_logo.png" style="height: 40px;"></div>
+            <div class="footer-info">
+                <a href="index.html" class="logo" aria-label="Página inicial do Inkers"><img src="assets/inkers_logo.png" alt="Inkers" style="height: 40px; width: auto;"></a>
+                <p class="empresa">70.146.721 BRUNO RIBEIRO DOS SANTOS<br>CNPJ 70.146.721/0001-90<br>Rua Francelino Alves de Lima, 750, Sala 204, Nova Angra (Cunhambebe)<br>Angra dos Reis/RJ, CEP 23933-005<br>Tel. <a href="tel:+5524998564421">(24) 99856-4421</a> · <a href="mailto:contato@inkers.com.br">contato@inkers.com.br</a></p>
+            </div>
             <div class="footer-links">
                 <h4>Legal</h4>
                 <ul>
@@ -76,7 +87,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Inkers. Todos os direitos reservados. Este sistema utiliza a Gemini API do Google.</p>
+            <p>&copy; 2026 Inkers. Todos os direitos reservados. O Inkers usa a Gemini API do Google para preparar textos.</p>
         </div>
     </footer>
 </body>

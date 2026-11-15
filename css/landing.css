@@ -347,6 +347,9 @@ p { text-wrap: pretty; }
 .rodape { border-top: 1px solid var(--linha); padding: 48px 0 calc(32px + 76px); background: var(--papel); }
 .rodape-in { display: grid; gap: 28px; }
 .rodape-in p { margin-top: 12px; color: var(--texto-3); font-size: .95rem; }
+.rodape-empresa { margin-top: 16px; font-style: normal; color: var(--texto-3); font-size: .85rem; line-height: 1.6; }
+.rodape-empresa a { color: var(--texto-2); text-decoration: none; }
+.rodape-empresa a:hover { color: var(--tinta); }
 .rodape-links { display: flex; flex-wrap: wrap; gap: 12px 24px; }
 .rodape-links a { color: var(--texto-2); text-decoration: none; font-size: .95rem; }
 .rodape-links a:hover { color: var(--tinta); }
