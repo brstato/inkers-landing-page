@@ -73,18 +73,19 @@
         <ul>
             <li><strong>instagram_basic</strong>: ler o perfil profissional (nome de usuário, foto, número de seguidores) e as mídias publicadas, para mostrar sua conta no app e identificar quais posts trouxeram pedidos.</li>
             <li><strong>instagram_content_publish</strong>: publicar no seu Instagram, e somente depois que você aprovar o post no app.</li>
+            <li><strong>Perfis de outros estúdios (opcional):</strong> se você cadastrar o @ de um estúdio para comparar, o Inkers lê só dados públicos desse perfil profissional (seguidores, quantidade e desempenho geral dos posts), usando a permissão instagram_basic da sua conexão. Não guardamos dados pessoais dessas pessoas além do @ e desses números públicos.</li>
             <li><strong>instagram_manage_insights</strong>: ler as métricas do perfil e dos posts (alcance, interações, visitas ao perfil) para montar o resumo semanal.</li>
             <li><strong>pages_show_list</strong> e <strong>pages_read_engagement</strong>: localizar a Página do Facebook vinculada ao seu Instagram, o que a Meta exige para publicar e ler métricas.</li>
-            <li><strong>instagram_manage_comments</strong>, <strong>instagram_manage_messages</strong> e <strong>pages_messaging</strong> (função “Conversas”, opcional): ler comentários e mensagens diretas recebidas e enviar a resposta que você escolher. O Inkers sugere um rascunho de resposta; <strong>você revisa e toca em Responder</strong>. Nenhuma resposta sai sem esse toque.</li>
-            <li><strong>ads_management</strong> (função de anúncios, opcional): criar e acompanhar anúncios no Instagram e no Facebook com a conta de anúncios que você indicar, no orçamento e nas condições que você aprovar.</li>
+            <li><strong>instagram_manage_comments</strong>, <strong>instagram_manage_messages</strong> e <strong>pages_messaging</strong> (função “Conversas”, <strong>futura: ainda não está ativa e o Inkers ainda não pede essas permissões</strong>): ler comentários e mensagens diretas recebidas e enviar a resposta que você escolher. O Inkers sugere um rascunho de resposta; <strong>você revisa e toca em Responder</strong>. Nenhuma resposta sai sem esse toque.</li>
+            <li><strong>ads_management</strong> (função de anúncios, <strong>futura: ainda não está ativa e o Inkers ainda não pede essa permissão</strong>): criar e acompanhar anúncios no Instagram e no Facebook com a conta de anúncios que você indicar, no orçamento e nas condições que você aprovar.</li>
         </ul>
         <p>Usamos esses dados apenas para entregar essas funções a você. Não vendemos esses dados, não os usamos para publicidade de terceiros e não os repassamos a corretores de dados.</p>
 
         <h2>3.2. Google</h2>
         <ul>
             <li><strong>Entrar com Google (openid, e-mail e perfil):</strong> identificar você e criar sua conta.</li>
-            <li><strong>Google Meu Negócio (business.manage):</strong> acessar a ficha da sua empresa no Google para publicar atualizações e fotos e ler avaliações, quando você conecta essa função.</li>
-            <li><strong>Google Ads (adwords):</strong> criar e acompanhar campanhas na sua conta do Google Ads, quando você conecta essa função.</li>
+            <li><strong>Google Meu Negócio (business.manage) — função futura, ainda não ativa:</strong> acessar a ficha da sua empresa no Google para publicar atualizações e fotos e ler avaliações, quando você conecta essa função.</li>
+            <li><strong>Google Ads (adwords) — função futura, ainda não ativa:</strong> criar e acompanhar campanhas na sua conta do Google Ads, quando você conecta essa função.</li>
         </ul>
         <p>O uso e a transferência, para qualquer outro aplicativo, de informações recebidas das APIs do Google seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado. Os dados do Google são usados só para entregar as funções acima, não são usados para publicidade e não são vendidos.</p>
 
@@ -99,7 +100,7 @@
         <ul>
             <li>Os tokens de acesso às suas contas conectadas são guardados <strong>criptografados</strong> (AES-GCM) no banco de dados.</li>
             <li>As chamadas à API da Meta usam prova de segredo do aplicativo (<em>appsecret_proof</em>) e toda a comunicação ocorre por HTTPS.</li>
-            <li>Os arquivos originais enviados são apagados dos servidores logo depois de processados; mantemos as versões otimizadas usadas nos seus posts e na sua página, enquanto sua conta existir.</li>
+            <li>Os arquivos originais enviados são apagados dos servidores logo depois de processados, exceto os vídeos do processo da tatuagem, que ficam por até 7 dias para você poder editar o resultado e depois são apagados; mantemos as versões otimizadas usadas nos seus posts e na sua página, enquanto sua conta existir.</li>
             <li>O acesso interno aos dados é restrito a quem precisa dele para operar o serviço.</li>
         </ul>
 
@@ -107,10 +108,10 @@
         <p>Você é responsável por ter a autorização do cliente para divulgar a imagem da tatuagem e da pessoa. Se um cliente preferir não aparecer, marque o trabalho como privado no app e ele não será usado em posts nem na sua página.</p>
 
         <h2>7. Compartilhamento</h2>
-        <p>Não vendemos nem alugamos dados pessoais. Os dados são compartilhados somente com os serviços necessários para o Inkers funcionar: Meta (Instagram e Facebook) e Google (login, Meu Negócio, Google Ads, Gemini API) conforme as funções que você ativar, o Cloudflare (hospedagem, proteção contra robôs e entrega do site) e provedores de hospedagem e envio de e-mail e notificações. Também podemos divulgar dados quando uma lei ou ordem judicial exigir.</p>
+        <p>Não vendemos nem alugamos dados pessoais. Os dados são compartilhados somente com os serviços necessários para o Inkers funcionar: Meta (Instagram e Facebook) e Google (login, Meu Negócio, Google Ads, Gemini API) conforme as funções que você ativar, o Cloudflare (hospedagem, proteção contra robôs e entrega do site) e provedores de hospedagem e de notificações no celular. Também podemos divulgar dados quando uma lei ou ordem judicial exigir.</p>
 
         <h2>8. Por quanto tempo guardamos</h2>
-        <p>Guardamos os dados enquanto sua conta existir. Ao desconectar uma plataforma, apagamos o token dela. Depois que você pedir a exclusão da conta, apagamos seus dados em até 48 horas, exceto o que a lei nos obrigar a manter.</p>
+        <p>Guardamos os dados enquanto sua conta existir. Ao desconectar uma plataforma, apagamos o token dela. Depois que você pedir a exclusão da conta, apagamos seus dados em até 48 horas, exceto o que a lei nos obrigar a manter. Cópias de segurança, se existirem, são sobrescritas pelo rodízio normal e não são usadas para outro fim.</p>
 
         <h2>9. Seus direitos (LGPD)</h2>
         <p>Você pode pedir confirmação de que tratamos seus dados, acesso, correção, portabilidade, anonimização, informação sobre compartilhamento e a exclusão dos dados, e pode revogar consentimentos. Escreva para <a href="mailto:contato@inkers.com.br">contato@inkers.com.br</a>. Para apagar sua conta, veja a página <a href="exclusao-de-dados.html">Exclusão de Dados</a>.</p>
