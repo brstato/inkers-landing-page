@@ -1,7 +1,5 @@
 User-agent: *
 Allow: /
-
-# Bloquear diretórios sensíveis (se houver, ex: painel admin)
-# Disallow: /admin/
+Disallow: /api/
 
 Sitemap: https://inkers.com.br/sitemap.xml

@@ -1,2 +1,8 @@
+# Arquivos que NÃO vão para o ar (só ficam no repositório)
 _worker.js
 wrangler.jsonc
+.git
+.github
+.gitignore
+.claude
+*.md
