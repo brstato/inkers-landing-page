@@ -20,4 +20,9 @@
       <loc>https://inkers.com.br/exclusao-de-dados</loc>
       <lastmod>2026-11-25</lastmod>
    </url>
+   <!-- Tela de login do app (outro host): o robots.txt de app.inkers.com.br aponta para este sitemap, o que o Google exige para aceitar a URL aqui. -->
+   <url>
+      <loc>https://app.inkers.com.br/login</loc>
+      <lastmod>2026-11-25</lastmod>
+   </url>
 </urlset>
