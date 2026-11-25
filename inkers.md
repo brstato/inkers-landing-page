@@ -8,7 +8,7 @@ O sistema é pensado e construído com empatia ("feito de tatuador para tatuador
 * **Domínio do App/Login:** `https://app.inkers.com.br`
 * **Tecnologias da Landing Page:** HTML5 Semântico, CSS3 e JavaScript Puro (Vanilla JS). Sem frameworks pesados.
 * **Hospedagem da Landing Page:** Cloudflare Pages.
-* **E-mail de Contato/Suporte Oficial:** `brunnoribeiroangra21@gmail.com`
+* **E-mail de Contato/Suporte Oficial:** `contato@inkers.com.br`
 
 ---
 
@@ -61,14 +61,14 @@ A documentação de privacidade deve obrigatoriamente incluir a seção **"Trata
 * O Inkers acessa o Google Calendar **exclusivamente** para sincronizar agendamentos e lembretes de sessões de tatuagem.
 * Os dados pessoais da agenda do usuário não são comercializados, extraídos ou usados para anúncios/publicidade de nenhuma forma.
 * O uso dessas informações atende estritamente à **Política de Dados do Usuário dos Serviços de API do Google**, incluindo todos os requisitos de Uso Limitado.
-* **Contato para dúvidas de privacidade:** `brunnoribeiroangra21@gmail.com`
+* **Contato para dúvidas de privacidade:** `contato@inkers.com.br`
 
 ### 4.3. Exclusão de Dados (`exclusao-de-dados.html`)
 * Rota pública explicando claramente que o tatuador pode revogar o acesso via painel administrativo do aplicativo a qualquer momento.
-* Para solicitar a **exclusão total e permanente de dados** (incluindo remoção em cascata dos tokens criptografados) sem necessidade de fazer login, o usuário deve enviar um e-mail formal para `brunnoribeiroangra21@gmail.com`.
+* Para solicitar a **exclusão total e permanente de dados** (incluindo remoção em cascata dos tokens criptografados) sem necessidade de fazer login, o usuário deve enviar um e-mail formal para `contato@inkers.com.br`.
 
 ### 4.4. Suporte (`suporte.html`)
-* Centralizar todo o atendimento e abertura de tickets no e-mail oficial: `brunnoribeiroangra21@gmail.com`.
+* Centralizar todo o atendimento e abertura de tickets no e-mail oficial: `contato@inkers.com.br`.
 * Incluir na página de suporte um guia visual (passo a passo) de como desconectar o Google Calendar pela conta Google do usuário.
 
 ---
