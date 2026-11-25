@@ -174,6 +174,7 @@
             <nav class="menu" aria-label="Seções da página">
                 <a href="#dores">O problema</a>
                 <a href="#como-funciona">Como funciona</a>
+                <a href="#por-dentro">Por dentro</a>
                 <a href="#duvidas">Dúvidas</a>
             </nav>
             <button type="button" class="btn btn-pri btn-sm" data-eu-quero="topo">Eu quero</button>
@@ -199,15 +200,31 @@
                         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Nada é publicado sem você aprovar</li>
                     </ul>
                 </div>
-                <div class="hero-visual">
-                    <div class="baralho" aria-hidden="true" style="cursor: default;">
-                        <div class="celular carta frente">
+                <div class="hero-visual" data-baralho>
+                    <div class="baralho" aria-hidden="true">
+                        <div class="celular carta" data-aviso="Post pronto para aprovar|Terça, 19:00 · é só tocar em aprovar">
                             <img src="assets/images/app/aprovar.webp" alt="" width="660" height="1428" fetchpriority="high" draggable="false">
+                        </div>
+                        <div class="celular carta" data-aviso="Foto enviada|O app prepara texto e horário">
+                            <img src="assets/images/app/enviar.webp" alt="" width="660" height="1428" decoding="async" draggable="false">
+                        </div>
+                        <div class="celular carta" data-aviso="Resumo da semana|4.812 pessoas alcançadas, 28% a mais">
+                            <img src="assets/images/app/semana.webp" alt="" width="660" height="1428" decoding="async" draggable="false">
+                        </div>
+                        <div class="celular carta" data-aviso="4 posts esperando você|É só revisar e aprovar">
+                            <img src="assets/images/app/inicio.webp" alt="" width="660" height="1428" decoding="async" draggable="false">
                         </div>
                     </div>
                     <div class="aviso-flutuante" aria-hidden="true">
                         <span class="aviso-icone"><svg viewBox="0 0 24 24"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg></span>
-                        <span class="aviso-texto"><strong>Post pronto para aprovar</strong><small>Terça, 19:00 · é só tocar em aprovar</small></span>
+                        <span class="aviso-texto"><strong data-aviso-titulo>Post pronto para aprovar</strong><small data-aviso-sub>Terça, 19:00 · é só tocar em aprovar</small></span>
+                    </div>
+                    <div class="baralho-guia">
+                        <button type="button" class="baralho-seta" data-baralho-ant aria-label="Tela anterior do app">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+                        <span class="baralho-dica"><span class="pontos" data-baralho-pontos aria-hidden="true"></span><span>Deslize para ver mais</span></span>
+                        <button type="button" class="baralho-seta" data-baralho-prox aria-label="Próxima tela do app">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
                     </div>
                 </div>
             </div>
@@ -336,6 +353,52 @@
                 </ol>
                 <div class="centro revelar">
                     <button type="button" class="btn btn-pri btn-lg" data-eu-quero="como-funciona">Eu quero</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- POR DENTRO -->
+        <section id="por-dentro" class="secao secao-escura">
+            <div class="wrap">
+                <header class="secao-topo revelar">
+                    <p class="rotulo">Por dentro do app</p>
+                    <h2>Simples como deveria ser.</h2>
+                    <p class="secao-sub">Telas de exemplo com um tatuador fictício, o Caio, para você ver como fica no dia a dia.</p>
+                </header>
+            </div>
+            <div class="vitrine" data-vitrine>
+                <ul class="vitrine-trilho" data-trilho>
+                    <li class="vitrine-item">
+                        <div class="celular"><img src="assets/images/app/enviar.webp" width="660" height="1428" loading="lazy"
+                                alt="Tela de envio do app do tatuador fictício Caio, com a foto de uma mandala em blackwork e a sugestão de mais luz e nitidez."></div>
+                        <h3>Mande a foto, o resto é com o app</h3>
+                        <p>O Caio escolhe a foto do trabalho e, se quiser, conta um detalhe sobre ele. Leva menos de um minuto.</p>
+                    </li>
+                    <li class="vitrine-item">
+                        <div class="celular"><img src="assets/images/app/aprovar.webp" width="660" height="1428" loading="lazy"
+                                alt="Plano de publicações da semana do tatuador fictício Caio, com o botão para aprovar 4 posts e o calendário dos dias."></div>
+                        <h3>Sua semana pronta para aprovar</h3>
+                        <p>Os posts chegam com texto e horário definidos. O Caio confere, aprova e volta para a maca.</p>
+                    </li>
+                    <li class="vitrine-item">
+                        <div class="celular"><img src="assets/images/app/semana.webp" width="660" height="1428" loading="lazy"
+                                alt="Relatório da semana do tatuador fictício Caio: 4 posts publicados, 4.812 pessoas alcançadas e dicas para a próxima semana."></div>
+                        <h3>Saiba o que funcionou</h3>
+                        <p>Toda semana, um resumo simples do alcance dos posts e do que vale repetir na semana seguinte.</p>
+                    </li>
+                    <li class="vitrine-item">
+                        <div class="celular"><img src="assets/images/app/inicio.webp" width="660" height="1428" loading="lazy"
+                                alt="Tela inicial do app do tatuador fictício Caio, com 4 posts para revisar e aprovar e os últimos trabalhos enviados."></div>
+                        <h3>Tudo o que precisa de você, numa tela só</h3>
+                        <p>O Caio abre o app de manhã e já vê o que tem para aprovar e os últimos trabalhos enviados.</p>
+                    </li>
+                </ul>
+                <div class="wrap vitrine-controles">
+                    <button type="button" class="seta" data-anterior aria-label="Tela anterior">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+                    <div class="pontos" data-pontos aria-hidden="true"></div>
+                    <button type="button" class="seta" data-proximo aria-label="Próxima tela">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
                 </div>
             </div>
         </section>
