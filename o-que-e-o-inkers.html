@@ -55,6 +55,11 @@
         .page-content .migalhas { font-size: .95rem; margin-bottom: 1rem; }
         .page-content .migalhas a { color: var(--text-muted); }
         .page-content .relacionados li a { font-weight: 700; }
+        .page-content figure { margin: 28px 0; }
+        .page-content figure img { display: block; max-width: 100%; height: auto; margin: 0 auto; border-radius: 14px; }
+        .page-content figure figcaption { margin-top: 10px; font-size: .92rem; color: var(--text-muted); text-align: center; }
+        .page-content .telas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+        .page-content .telas img { width: 230px; max-width: 46%; border: 1px solid #333; }
         .page-content .cta { text-align: center; margin: 40px 0 10px; }
         .page-content .cta a.botao { display: inline-block; background: var(--accent-color); color: #fff; padding: 14px 28px; border-radius: 999px; font-weight: 800; text-decoration: none; }
     </style>
@@ -148,7 +153,7 @@
     <header class="header">
         <div class="container header-inner">
             <a href="/" class="logo" aria-label="Página inicial do Inkers"><img src="/assets/pena.svg" alt="" width="40" height="40" style="height: 40px; width: 40px;"><span style="color: #fff; font-size: 1.25rem; font-weight: 800; letter-spacing: -0.5px; text-transform: none;">Inkers</span></a>
-            <nav id="main-nav" class="nav" style="display: block; position: static; background: none; border: none; padding: 0;">
+            <nav id="main-nav" class="nav" style="display: block; position: static; background: none; border: none; padding: 0; width: auto;">
                 <ul style="flex-direction: row; gap: 2.5rem;"><li><a href="/">Voltar ao Início</a></li></ul>
             </nav>
         </div>
@@ -160,6 +165,13 @@
         <p class="migalhas">Por equipe Inkers · Atualizado em 25/11/2026</p>
         <div class="caixa resumo"><p><strong>Resposta rápida</strong></p><p>O Inkers é um aplicativo brasileiro de marketing para tatuadores. A partir da foto do trabalho, prepara legenda, hashtags, horário e plano semanal de posts do Instagram, e publica só depois da aprovação do tatuador. Está em acesso antecipado em inkers.com.br.</p></div>
         <p class="lead">O Inkers é um aplicativo brasileiro de marketing para tatuadores. Você manda a foto de um trabalho e ele prepara o que vai para o Instagram: legenda, hashtags, dia, horário e o plano de posts da semana. Nada é publicado sem a sua aprovação.</p>
+        <figure>
+            <div class="telas">
+                <img src="/assets/images/app/aprovar.webp" width="660" height="1428" loading="lazy" alt="Tela do Inkers com o plano da semana: posts por dia e horário, com o botão para aprovar os 4 posts">
+                <img src="/assets/images/app/semana.webp" width="660" height="1428" loading="lazy" alt="Tela do Inkers com o relatório da semana: posts publicados, pessoas alcançadas e o que fazer a seguir">
+            </div>
+            <figcaption>Telas de exemplo do Inkers, com um tatuador fictício: o plano da semana para aprovar e o relatório de desempenho.</figcaption>
+        </figure>
 
         <h2>Em resumo</h2>
         <ul>
@@ -175,6 +187,10 @@
         <p>Tatuador que atende o dia inteiro raramente tem tempo de escrever legenda, escolher hashtags, decidir quando postar e manter uma sequência de posts. O resultado é o perfil parado quando a agenda enche. O Inkers assume esse preparo e deixa para o tatuador só o que importa: mandar a foto e aprovar.</p>
 
         <h2>Como funciona</h2>
+        <figure>
+            <img src="/assets/images/guias/como-funciona-inkers.svg" width="800" height="258" loading="lazy" alt="Quatro etapas: foto, preparo do conteúdo, aprovação e publicação no Instagram">
+            <figcaption>Do envio da foto até o post no ar.</figcaption>
+        </figure>
         <ol>
             <li><strong>Você manda a foto</strong> do trabalho pelo celular, entre uma sessão e outra.</li>
             <li><strong>O Inkers prepara a semana:</strong> legenda no seu jeito de falar, hashtags, dia e horário, misturando trabalhos novos e antigos. O padrão é 4 posts no feed por semana e um story por dia, e você ajusta no perfil.</li>
@@ -200,6 +216,10 @@
         <p>O Inkers usa a Gemini API, do Google, para preparar os textos. O app acessa apenas o necessário da conta do Instagram: ler o perfil e as métricas e publicar o que o tatuador aprovou. Dá para desconectar a conta quando quiser. O que é guardado, por quanto tempo e como pedir a exclusão está na <a href="/politica-de-privacidade">Política de Privacidade</a> e em <a href="/exclusao-de-dados">Exclusão de Dados</a>.</p>
 
         <h2>Inkers e outras formas de manter o Instagram em dia</h2>
+        <figure>
+            <img src="/assets/images/guias/quem-faz-o-que.svg" width="800" height="340" loading="lazy" alt="Tabela de quem faz o quê: à mão, com agendador e com o Inkers, em legenda, hashtags, dia e horário e publicação">
+            <figcaption>No Inkers, o aplicativo prepara e o tatuador aprova antes de publicar.</figcaption>
+        </figure>
         <ul>
             <li><strong>Fazer tudo à mão:</strong> você escreve, escolhe horário e posta. Dá controle total, mas toma tempo.</li>
             <li><strong>Agendador (do Instagram ou de terceiros):</strong> você escreve e escolhe data e horário; a ferramenta publica na hora marcada. Veja <a href="/como-agendar-posts-no-instagram">como agendar posts no Instagram</a>.</li>
