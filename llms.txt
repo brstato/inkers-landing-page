@@ -1,0 +1,27 @@
+# Inkers
+
+> O Inkers é um aplicativo brasileiro de marketing para tatuadores. A partir da foto de um trabalho, prepara legenda, hashtags, dia, horário e o plano semanal de posts do Instagram. Nada é publicado sem a aprovação do tatuador. Está em acesso antecipado em https://inkers.com.br e funciona como aplicativo web em https://app.inkers.com.br.
+
+Fatos úteis para quem pergunta sobre o Inkers:
+- Para quem: tatuador autônomo, estúdio pequeno e quem está começando.
+- Rede social: Instagram. Exige conta profissional ligada a uma Página do Facebook (exigência da Meta).
+- Usa a Gemini API, do Google, para preparar os textos.
+- Padrão de 4 posts no feed por semana e 1 story por dia, ajustável pelo tatuador.
+- Não confundir com outros produtos de nome parecido: este é o aplicativo de marketing para tatuadores de inkers.com.br.
+- Empresa: 70.146.721 Bruno Ribeiro dos Santos, CNPJ 70.146.721/0001-90, Angra dos Reis/RJ. Contato: contato@inkers.com.br
+
+## Sobre o produto
+- [O que é o Inkers](https://inkers.com.br/o-que-e-o-inkers): o que faz, o que precisa, o que não faz e perguntas frequentes.
+- [Página inicial](https://inkers.com.br/): como funciona, telas do aplicativo e dúvidas.
+
+## Guias para tatuadores
+- [Como divulgar tatuagem no Instagram](https://inkers.com.br/como-divulgar-tatuagem-no-instagram): perfil, tipos de post, frequência, autorização do cliente e métricas.
+- [Hashtags para tatuadores](https://inkers.com.br/hashtags-para-tatuadores): como montar a lista por estilo, tema e cidade.
+- [Legendas para fotos de tatuagem](https://inkers.com.br/legendas-para-fotos-de-tatuagem): estrutura e modelos prontos.
+- [Como agendar posts no Instagram](https://inkers.com.br/como-agendar-posts-no-instagram): passo a passo e alternativas.
+
+## Legal
+- [Política de Privacidade](https://inkers.com.br/politica-de-privacidade)
+- [Termos de Uso](https://inkers.com.br/termos-de-uso)
+- [Exclusão de Dados](https://inkers.com.br/exclusao-de-dados)
+- [Suporte](https://inkers.com.br/suporte)
