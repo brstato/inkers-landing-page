@@ -286,7 +286,7 @@
       erro.innerHTML = 'Não conseguimos registrar agora. <a href="#" data-email>Toque aqui para enviar por e-mail</a> ou tente de novo em instantes.';
       $('[data-email]', erro).addEventListener('click', (ev) => {
         ev.preventDefault();
-        location.href = `mailto:brunnoribeiroangra21@gmail.com?subject=${encodeURIComponent('Eu quero o Inkers')}&body=${encodeURIComponent(corpo)}`;
+        location.href = `mailto:contato@inkers.com.br?subject=${encodeURIComponent('Eu quero o Inkers')}&body=${encodeURIComponent(corpo)}`;
       });
     };
     try {
