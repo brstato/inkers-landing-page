@@ -77,7 +77,7 @@
       "@id": "https://inkers.com.br/#app",
       "name": "Inkers",
       "applicationCategory": "BusinessApplication",
-      "operatingSystem": "iOS, Android, Web",
+      "operatingSystem": "Web",
       "description": "Aplicativo de marketing para tatuadores: prepara legenda, hashtags, horário e plano semanal de posts do Instagram a partir da foto do trabalho. Nada é publicado sem a aprovação do tatuador.",
       "url": "https://app.inkers.com.br",
       "author": {
@@ -193,7 +193,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/landing.css?v=6">
+    <link rel="stylesheet" href="css/landing.css?v=7">
 </head>
 
 <body>
@@ -211,6 +211,7 @@
                 <a href="#dores">O problema</a>
                 <a href="#como-funciona">Como funciona</a>
                 <a href="#por-dentro">Por dentro</a>
+                <a href="#guias">Guias</a>
                 <a href="#duvidas">Dúvidas</a>
             </nav>
             <button type="button" class="btn btn-pri btn-sm" data-eu-quero="topo">Eu quero</button>
@@ -499,7 +500,7 @@
         </section>
 
         <!-- GUIAS -->
-        <section id="guias" class="secao secao-escura">
+        <section id="guias" class="secao">
             <div class="wrap">
                 <header class="secao-topo revelar">
                     <p class="rotulo">Guias para tatuadores</p>
@@ -518,12 +519,20 @@
                         <h3><a href="/legendas-para-fotos-de-tatuagem">Legendas para fotos de tatuagem</a></h3>
                         <p>Estrutura e exemplos prontos para adaptar ao seu jeito de falar.</p>
                     </article>
+                    <article class="perfil revelar">
+                        <h3><a href="/como-agendar-posts-no-instagram">Como agendar posts no Instagram</a></h3>
+                        <p>Passo a passo do agendamento nativo e quando vale usar um aplicativo.</p>
+                    </article>
+                    <article class="perfil revelar">
+                        <h3><a href="/o-que-e-o-inkers">O que é o Inkers</a></h3>
+                        <p>O aplicativo explicado em poucas linhas: o que faz, o que precisa e o que não faz.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- DÚVIDAS -->
-        <section id="duvidas" class="secao">
+        <section id="duvidas" class="secao secao-escura">
             <div class="wrap duvidas-grid">
                 <header class="secao-topo secao-topo-esq revelar">
                     <p class="rotulo">Dúvidas</p>
@@ -623,7 +632,7 @@
                 </address>
             </div>
             <nav aria-label="Links legais" class="rodape-links">
-                <a href="/como-divulgar-tatuagem-no-instagram">Guias</a>
+                <a href="/#guias">Guias</a>
                 <a href="/termos-de-uso">Termos de Uso</a>
                 <a href="/politica-de-privacidade">Privacidade</a>
                 <a href="/exclusao-de-dados">Exclusão de Dados</a>
